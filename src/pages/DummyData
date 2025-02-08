@@ -1,0 +1,40 @@
+const dummyTrips = [
+  {
+    id: "TRIP-001",
+    date: "2025-02-08",
+    destinations: 5,
+    loadingType: "Palette",
+    duration: "3h 45m",
+    routeOptimized: true,
+    loadingOptimized: true,
+  },
+  {
+    id: "TRIP-002",
+    date: "2025-02-07",
+    destinations: 3,
+    loadingType: "Colis",
+    duration: "2h 10m",
+    routeOptimized: false,
+    loadingOptimized: true,
+  },
+  {
+    id: "TRIP-003",
+    date: "2025-02-06",
+    destinations: 8,
+    loadingType: "Mixte",
+    duration: "5h 30m",
+    routeOptimized: true,
+    loadingOptimized: false,
+  },
+  {
+    id: "TRIP-004",
+    date: "2025-02-05",
+    destinations: 4,
+    loadingType: "Palette",
+    duration: "4h 05m",
+    routeOptimized: false,
+    loadingOptimized: null,
+  },
+];
+
+export default dummyTrips;

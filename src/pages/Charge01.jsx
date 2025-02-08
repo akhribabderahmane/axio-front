@@ -1,9 +1,10 @@
 import React from 'react'
+import HomePage from './HomaPagePlan'
 
 const Charge01 = () => {
   return (
     <div>
-      charge01
+      <HomePage></HomePage>
     </div>
   )
 }

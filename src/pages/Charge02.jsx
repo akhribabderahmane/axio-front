@@ -1,11 +1,17 @@
-import React from 'react'
+import React from 'react';
+import Historique from './Historique';
 
 const Charge02 = () => {
-  return (
-    <div>
-      charge02
-    </div>
-  )
-}
+  const trips = [
+    { id: "X456B", date: "07/02/2025", destinations: 5, loadingType: "LIFO", duration: "3h 45min", routeOptimized: true, loadingOptimized: null },
+    { id: "X123A", date: "06/02/2025", destinations: 3, loadingType: "FIFO", duration: "2h 15min", routeOptimized: false, loadingOptimized: true },
+  ];
 
-export default Charge02
+  return (
+    <div className="p-6">
+      <Historique trips={trips} />
+    </div>
+  );
+};
+
+export default Charge02;
