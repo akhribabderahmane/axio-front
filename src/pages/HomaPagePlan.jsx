@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import pic1 from "../assets/PlanifierTrajet.png"
 import pic2 from "../assets/ListTrans.png"
 import pic3 from "../assets/ListDemande.png"
@@ -20,31 +20,31 @@ const HomePage = () => {
       {/* Card Grid */}
       <div className="grid grid-cols-2 gap-8 mt-12 w-full max-w-3xl">
         {/* Planifier un trajet */}
-        <div
+        <Link
+        to="/planifier"
           className="w-full bg-white shadow-md rounded-2xl p-6 flex flex-col items-center cursor-pointer hover:shadow-lg transition"
-          onClick={() => navigate("/planifier")} // Navigate to Planifier page
         >
           <img src={pic1} alt="Planifier un trajet" className="w-28 h-28" />
           <p className="mt-4 text-lg font-semibold text-gray-800">Planifier un trajet</p>
-        </div>
+        </Link>
 
         {/* Transporteurs */}
-        <div
+        <Link
+        to="/transporters"
           className="w-full bg-white shadow-md rounded-2xl p-6 flex flex-col items-center cursor-pointer hover:shadow-lg transition"
-          onClick={() => navigate("/transporteurs")} // Navigate to Transporteurs page
         >
           <img src={pic2} alt="Transporteurs" className="w-28 h-28" />
           <p className="mt-4 text-lg font-semibold text-gray-800">Consulter la liste des transporteurs</p>
-        </div>
+        </Link>
 
         {/* Demandes (Full Width) */}
-        <div
+        <Link
+        to="/demandes"
           className="col-span-2 w-full bg-white shadow-md rounded-2xl p-6 flex flex-col items-center cursor-pointer hover:shadow-lg transition"
-          onClick={() => navigate("/demandes")} // Navigate to Demandes page
         >
           <img src={pic3} alt="Demandes" className="w-28 h-28" />
           <p className="mt-4 text-lg font-semibold text-gray-800">Consulter la liste des demandes</p>
-        </div>
+        </Link>
       </div>
     </div>
   );
